@@ -1,3 +1,4 @@
 files:
   - source: /**/Languages/zh-Hans.xaml
     translation: /**/Languages/%locale%.xaml
+    multilingual: 1
