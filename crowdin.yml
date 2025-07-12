@@ -4,5 +4,5 @@ base_path: "./WonderLab.Override.I18n/Languages"
 preserve_hierarchy: true
 
 files:
-  - source: "en-US.xaml"
-    translation: "%locale%.xaml"
+  - source: "zh-Hans.xaml"
+    translation: "%file_name%.xaml"
