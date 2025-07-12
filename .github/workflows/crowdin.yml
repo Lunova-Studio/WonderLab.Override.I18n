@@ -1,4 +1,4 @@
-name: Crowdin Sync
+name: Crowdin Translation Sync
 
 on:
   workflow_dispatch:
@@ -13,18 +13,33 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Crowdin GitHub Action
-        uses: crowdin/github-action@v2.9.0
+      - name: Crowdin download translations only
+        uses: crowdin/github-action@v2
         with:
-          upload_sources: true
-          push_translations: true
-          create_pull_request: true
+          config: 'crowdin.yml'
+          upload_sources: false
+          upload_translations: false
           download_translations: true
-          localization_branch_name: master_translations
-          pull_request_base_branch_name: master
-          pull_request_title: "🌐 更新翻译内容"
-          pull_request_body: "由 Crowdin GitHub Action 提交的翻译更新"
+          push_translations: false
+          create_pull_request: false
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+
+      - name: Configure Git identity
+        run: |
+          git config user.name "WonderBot"
+          git config user.email "crowdin@wonderlab.local"
+
+      - name: Switch to master_translations & commit
+        run: |
+          git checkout master_translations
+          git pull origin master_translations
+          git add WonderLab.Override.I18n/Languages/*.xaml
+          git commit -m "🌍 Crowdin 翻译更新"
+        continue-on-error: true  # 如果没变化就跳过
+
+      - name: Push to master_translations
+        uses: ad-m/github-push-action@master
+        with:
+          branch: master_translations
+          github_token: ${{ secrets.GH_TOKEN }}
