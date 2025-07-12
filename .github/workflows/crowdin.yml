@@ -21,10 +21,10 @@ jobs:
           create_pull_request: true
           download_translations: true
           localization_branch_name: master_translations
+          pull_request_base_branch_name: master
           pull_request_title: "🌐 更新翻译内容"
           pull_request_body: "由 Crowdin GitHub Action 提交的翻译更新"
-          pull_request_base_branch_name: master
         env:
-          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
