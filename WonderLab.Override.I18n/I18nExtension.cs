@@ -1,92 +1,83 @@
-﻿using Avalonia;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.Data;
+using Avalonia.Data.Converters;
 using Avalonia.Markup.Xaml;
-using Avalonia.Markup.Xaml.MarkupExtensions;
-using System.Collections.Frozen;
-using System.Diagnostics;
+using Avalonia.Metadata;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Globalization;
-using System.Reactive.Linq;
-using System.Reactive.Subjects;
 
 namespace WonderLab.Override.I18n;
 
-[DebuggerDisplay("Key = {Key}, Keys = {Keys}")]
-public sealed class I18nExtension() : MarkupExtension {
+public sealed class I18nExtension : MarkupExtension {
+    private const string ResourcePath = "avares://WonderLab.Override.I18n/Languages/";
+
+    private static ResourceDictionary _langDict = [];
     private static CultureInfo _culture = CultureInfo.InvariantCulture;
-    private static ResourceDictionary _langs = default!;
-    private static readonly BehaviorSubject<string> _translationSubject = new(string.Empty);
-    public static FrozenDictionary<string, string> Texts { get; private set; } = default!;
-
-    private const string DEFAULT_RESOURCEDICTIONARYS_PATH = "avares://WonderLab.Override.I18n/Languages/";
-
-    private static event CultureChangedHandler? CultureChanged;
-    private delegate void CultureChangedHandler(CultureInfo culture);
-
-    public string? Key { get; set; }
-    public string[]? Args { get; set; }
-    public BindingBase? KeyBinding { get; set; }
 
     public static CultureInfo Culture {
         set {
             if (_culture != value) {
                 _culture = value;
-                Texts = ChangeResourceDictionary(value);
-                Application.Current!.Resources.MergedDictionaries.Remove(_langs);
-                CultureChanged?.Invoke(value);
-                Application.Current.Resources.MergedDictionaries.Add(_langs);
+                var uri = new Uri($"{ResourcePath}{value.Name}.xaml");
+                _langDict = AvaloniaXamlLoader.Load(uri) as ResourceDictionary ?? new ResourceDictionary();
+                I18nNotifier.Instance.Trigger();
             }
         }
     }
 
-    public I18nExtension(string key) : this() {
+    public string? Key { get; set; }
+    public IBinding? KeyBinding { get; set; }
+
+    [Content]
+    public Collection<IBinding> Args { get; set; } = [];
+
+    public I18nExtension() { }
+
+    public I18nExtension(string key) {
         Key = key;
     }
 
-    public static IObservable<string> Translate(string key, params object[] args) {
-        CultureChanged += culture => {
-            string translatedValue = TranslateInternal(key, args);
-            _translationSubject.OnNext(translatedValue);
-        };
-
-        string initialTranslation = TranslateInternal(key, args);
-        _translationSubject.OnNext(initialTranslation);
-
-        return _translationSubject.AsObservable();
-
-        static string TranslateInternal(string key, params object[] args) {
-            if (Texts.TryGetValue(key, out var value))
-                return args.Length > 0 ? string.Format(value, args) : value;
-
-            return key;
-        }
+    public I18nExtension(IBinding keyBinding) {
+        KeyBinding = keyBinding;
     }
 
     public override object ProvideValue(IServiceProvider serviceProvider) {
-        Debug.WriteLine(KeyBinding?.ToString());
+        var triggerBinding = new Binding(nameof(I18nNotifier.Source)) {
+            Source = I18nNotifier.Instance,
+            Mode = BindingMode.OneWay
+        };
 
-        if (KeyBinding is not null)
-            return new DynamicResourceExtension(KeyBinding.ToString()!);
-        
-        return new DynamicResourceExtension(Key!);
+        var multi = new MultiBinding {
+            Bindings = { triggerBinding },
+            Converter = new FormatConverter(),
+            Mode = BindingMode.OneWay
+        };
+
+        if (KeyBinding != null)
+            multi.Bindings.Add(KeyBinding);
+        else if (Key is not null)
+            multi.Bindings.Add(new Binding { Source = Key });
+
+        foreach (var arg in Args)
+            multi.Bindings.Add(arg);
+
+        return multi;
     }
 
-    #region Private Methods
+    private sealed class FormatConverter : IMultiValueConverter {
+        public object Convert(IList<object?> values, Type targetType, object? parameter, CultureInfo culture) {
+            if (values.Count < 2) return "";
 
-    private static FrozenDictionary<string, string> ChangeResourceDictionary(CultureInfo culture) {
-        return Convert();
+            var key = values[1]?.ToString() ?? "";
+            var args = values.Skip(2).ToArray();
 
-        FrozenDictionary<string, string> Convert() {
-            _langs = (AvaloniaXamlLoader.Load(
-                new Uri(DEFAULT_RESOURCEDICTIONARYS_PATH + culture.Name + ".xaml")
-            ) as ResourceDictionary)!;
+            if (_langDict.TryGetValue(key, out var value)) {
+                var format = value?.ToString() ?? key;
+                return args.Length > 0 ? string.Format(format, args) : format;
+            }
 
-            return _langs!.ToFrozenDictionary(
-                kvp1 => kvp1.Key.ToString() ?? "Not Found",
-                kvp2 => kvp2.Value?.ToString() ?? "Not Found"
-            );
+            return "Not found";
         }
     }
-
-    #endregion
 }
