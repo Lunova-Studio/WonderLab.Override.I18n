@@ -1,7 +1,32 @@
 ﻿<?xml version="1.0"?>
 <ResourceDictionary xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:System="clr-namespace:System;assembly=mscorlib">
-  <!-- Add Resources Here -->
-	<System:String x:Key="test1">Test 1</System:String>
-	<System:String x:Key="format_test">{0} Piece</System:String>
-	<System:String x:Key="test3">Test 3</System:String>
+	<!--Shared-->
+	<System:String x:Key="Close">关闭</System:String>
+	<System:String x:Key="Home">首页</System:String>
+	<System:String x:Key="Download">下载</System:String>
+	<System:String x:Key="Multiplayer">联机</System:String>
+	<System:String x:Key="Settings">设置</System:String>
+	<System:String x:Key="Launch">启动</System:String>
+	<System:String x:Key="Install">安装</System:String>
+	<System:String x:Key="Path">路径</System:String>
+
+	<!-- Main Window -->
+	<System:String x:Key="TaskCenter">任务中心</System:String>
+	<System:String x:Key="TaskCount_Format">当前正在执行 {0} 个任务</System:String>
+	
+	<!--Game Page-->
+	<System:String x:Key="AllGames">所有游戏</System:String>
+	<System:String x:Key="GameManager">游戏管理</System:String>
+	<System:String x:Key="NoInstalledGame_Tip">未安装任何 Minecraft 实例</System:String>
+
+	<!--Tasks Page-->
+	<System:String x:Key="TaskList">任务列表</System:String>
+	<System:String x:Key="NoActiveTask_Tip">无执行中的任务</System:String>
+	
+	<!--Dashboard Page-->
+	<System:String x:Key="QuickLaunch">快速启动</System:String>
+	<System:String x:Key="ControlCenter">控制中心</System:String>
+	<System:String x:Key="EnableIndependencyGame">版本隔离</System:String>
+	<System:String x:Key="EnableIndependencySetting">启用版本独立设置</System:String>
+	<System:String x:Key="NoWorld_Tip">没有任何 Minecraft 单人存档或多人服务器</System:String>
 </ResourceDictionary>
