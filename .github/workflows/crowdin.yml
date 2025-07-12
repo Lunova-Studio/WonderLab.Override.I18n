@@ -3,17 +3,20 @@ name: Crowdin Translation Sync
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 * * * *'  # 每小时自动同步，可按需调整
 
 jobs:
   sync-translations:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout master branch
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: master
 
-      - name: Crowdin download translations only
+      - name: download translations only
         uses: crowdin/github-action@v2
         with:
           config: 'crowdin.yml'
@@ -31,16 +34,16 @@ jobs:
           git config user.name "WonderBot"
           git config user.email "crowdin@wonderlab.local"
 
-      - name: Switch to master_translations & commit
+      - name: Commit translations to master
         run: |
-          git checkout master_translations
-          git pull origin master_translations
+          git pull origin master
           git add WonderLab.Override.I18n/Languages/*.xaml
           git commit -m "🌍 Crowdin 翻译更新"
-        continue-on-error: true  # 如果没变化就跳过
+        continue-on-error: true  # 若无改动则跳过提交
 
-      - name: Push to master_translations
+      - name: Push directly to master
         uses: ad-m/github-push-action@master
         with:
-          branch: master_translations
-          github_token: ${{ secrets.GH_TOKEN }}
+          branch: master
+          github_token: ${{ secrets.GIT_TOKEN }}
+          force: true
