@@ -1,49 +1,30 @@
-name: Crowdin Translation Sync
+name: Crowdin Sync
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'  # 每小时自动同步，可按需调整
+    - cron: '0 * * * *'
 
 jobs:
   sync-translations:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout master branch
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: master
 
-      - name: download translations only
-        uses: crowdin/github-action@v2
+      - name: Crowdin GitHub Action
+        uses: crowdin/github-action@v2.9.0
         with:
-          config: 'crowdin.yml'
-          upload_sources: false
-          upload_translations: false
+          upload_sources: true
+          push_translations: true
+          create_pull_request: true
           download_translations: true
-          push_translations: false
-          create_pull_request: false
+          localization_branch_name: master_translations
+          pull_request_title: "🌐 更新翻译内容"
+          pull_request_body: "由 Crowdin GitHub Action 提交的翻译更新"
+          pull_request_base_branch_name: master
         env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
-
-      - name: Configure Git identity
-        run: |
-          git config user.name "WonderBot"
-          git config user.email "crowdin@wonderlab.local"
-
-      - name: Commit translations to master
-        run: |
-          git pull origin master
-          git add WonderLab.Override.I18n/Languages/*.xaml
-          git commit -m "🌍 Crowdin 翻译更新"
-        continue-on-error: true  # 若无改动则跳过提交
-
-      - name: Push directly to master
-        uses: ad-m/github-push-action@master
-        with:
-          branch: master
-          github_token: ${{ secrets.GIT_TOKEN }}
-          force: true
