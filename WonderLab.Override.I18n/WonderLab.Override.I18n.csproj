@@ -5,28 +5,39 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
+	
+	<ItemGroup>
+	  <None Remove="Languages\en-US.xaml" />
+	  <None Remove="Languages\ja-JP.xaml" />
+	  <None Remove="Languages\zh-Hans.xaml" />
+	  <None Remove="Languages\zh-Hant.xaml" />
+	  <None Remove="Languages\zh-lzh.xaml" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <AvaloniaResource Include="Languages\ja-JP.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </AvaloniaResource>
+	  <AvaloniaResource Include="Languages\zh-Hans.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </AvaloniaResource>
+	  <AvaloniaResource Include="Languages\zh-Hant.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </AvaloniaResource>
+	  <AvaloniaResource Include="Languages\zh-lzh.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </AvaloniaResource>
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <AvaloniaXaml Include="Languages\en-US.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </AvaloniaXaml>
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Avalonia" Version="11.3.0" />
 		<PackageReference Include="System.Reactive" Version="6.0.1" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <None Update="Languages\ja-JP.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </None>
-	  <None Update="Languages\zh-lzh.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </None>
-	  <None Update="Languages\zh-Hans.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </None>
-	  <None Update="Languages\zh-Hant.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </None>
-	  <None Update="Languages\en-US.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </None>
 	</ItemGroup>
 	
 </Project>

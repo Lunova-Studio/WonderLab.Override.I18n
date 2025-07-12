@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 					xmlns:System="clr-namespace:System;assembly=mscorlib">
   <!-- Add Resources Here -->
-	<System:String x:Key="test1"></System:String>
-	<System:String x:Key="format_test"></System:String>
-	<System:String x:Key="test3"></System:String>
+	<System:String x:Key="test1">q</System:String>
+	<System:String x:Key="format_test">q</System:String>
+	<System:String x:Key="test3">q</System:String>
 </ResourceDictionary>

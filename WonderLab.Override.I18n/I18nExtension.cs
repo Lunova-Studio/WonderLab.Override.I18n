@@ -1,5 +1,6 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Data;
 using Avalonia.Markup.Xaml;
 using Avalonia.Markup.Xaml.MarkupExtensions;
 using System.Collections.Frozen;
@@ -22,7 +23,9 @@ public sealed class I18nExtension() : MarkupExtension {
     private static event CultureChangedHandler? CultureChanged;
     private delegate void CultureChangedHandler(CultureInfo culture);
 
-    public string? Key { get; }
+    public string? Key { get; set; }
+    public string[]? Args { get; set; }
+    public BindingBase? KeyBinding { get; set; }
 
     public static CultureInfo Culture {
         set {
@@ -52,17 +55,19 @@ public sealed class I18nExtension() : MarkupExtension {
         return _translationSubject.AsObservable();
 
         static string TranslateInternal(string key, params object[] args) {
-            if (Texts.TryGetValue(key, out var value)) {
+            if (Texts.TryGetValue(key, out var value))
                 return args.Length > 0 ? string.Format(value, args) : value;
-            }
+
             return key;
         }
     }
 
     public override object ProvideValue(IServiceProvider serviceProvider) {
-        if (serviceProvider.GetService(typeof(IProvideValueTarget)) is not IProvideValueTarget)
-            return this;
+        Debug.WriteLine(KeyBinding?.ToString());
 
+        if (KeyBinding is not null)
+            return new DynamicResourceExtension(KeyBinding.ToString()!);
+        
         return new DynamicResourceExtension(Key!);
     }
 
