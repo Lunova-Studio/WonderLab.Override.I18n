@@ -1,8 +1,7 @@
-<ResourceDictionary xmlns="https://github.com/avaloniaui"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-					xmlns:System="clr-namespace:System;assembly=mscorlib">
+﻿<?xml version="1.0"?>
+<ResourceDictionary xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:System="clr-namespace:System;assembly=mscorlib">
   <!-- Add Resources Here -->
-	<System:String x:Key="test1">test1</System:String>
-	<System:String x:Key="format_test">{0} count</System:String>
-	<System:String x:Key="test3">test3</System:String>
+	<System:String x:Key="test1">Test 1</System:String>
+	<System:String x:Key="format_test">{0} Piece</System:String>
+	<System:String x:Key="test3">Test 3</System:String>
 </ResourceDictionary>
