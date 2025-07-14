@@ -13,14 +13,14 @@ public sealed class I18nExtension : MarkupExtension {
     private const string ResourcePath = "avares://WonderLab.Override.I18n/Languages/";
 
     private static ResourceDictionary _langDict = [];
-    private static CultureInfo _culture = CultureInfo.InvariantCulture;
+    private static string _languageCode = string.Empty;
 
-    public static CultureInfo Culture {
+    public static string LanguageCode {
         set {
-            if (_culture != value) {
-                _culture = value;
-                var uri = new Uri($"{ResourcePath}{value.Name}.xaml");
-                _langDict = AvaloniaXamlLoader.Load(uri) as ResourceDictionary ?? new ResourceDictionary();
+            if (_languageCode != value) {
+                _languageCode = value;
+                var uri = new Uri($"{ResourcePath}{value}.xaml");
+                _langDict = AvaloniaXamlLoader.Load(uri) as ResourceDictionary ?? [];
                 I18nNotifier.Instance.Trigger();
             }
         }
@@ -77,7 +77,7 @@ public sealed class I18nExtension : MarkupExtension {
                 return args.Length > 0 ? string.Format(format, args) : format;
             }
 
-            return "Not found";
+            return "dorodorodo?";
         }
     }
 }
