@@ -2,6 +2,7 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:System="clr-namespace:System;assembly=mscorlib">
 	<!--Shared-->
 	<System:String x:Key="Close">关闭</System:String>
+	<System:String x:Key="Delete">删除</System:String>
 	<System:String x:Key="Home">首页</System:String>
 	<System:String x:Key="Download">下载</System:String>
 	<System:String x:Key="Multiplayer">联机</System:String>
@@ -24,7 +25,9 @@
 	<System:String x:Key="AllGames">所有游戏</System:String>
 	<System:String x:Key="GameManager">游戏管理</System:String>
 	<System:String x:Key="NoInstalledGame_Tip">未安装任何 Minecraft 实例</System:String>
-
+	<System:String x:Key="CopyPath">复制游戏文件夹路径</System:String>
+	<System:String x:Key="OpenFolder">打开游戏文件夹</System:String>
+	
 	<!--Tasks Page-->
 	<System:String x:Key="TaskList">任务列表</System:String>
 	<System:String x:Key="NoActiveTask_Tip">无执行中的任务</System:String>
