@@ -15,12 +15,18 @@
 	<System:String x:Key="TaskCount_Format">{0} tasks are running</System:String>
 	
 	<!--Game Page-->
+	<System:String x:Key="Sort_Name">名称</System:String>
+	<System:String x:Key="Group_None">不分组</System:String>
+	<System:String x:Key="Group_Loader">模组加载器</System:String>
+	<System:String x:Key="Group_GameVersion">游戏版本</System:String>
+	<System:String x:Key="SortMode">排序方式</System:String>
+	<System:String x:Key="GroupMode">分组条件</System:String>
 	<System:String x:Key="AllGames">All Games</System:String>
 	<System:String x:Key="GameManager">Game Settings</System:String>
 	<System:String x:Key="NoInstalledGame_Tip">No Minecraft Instances Installed</System:String>
 
 	<!--Tasks Page-->
-	<System:String x:Key="TaskList">Tasklists</System:String>
+	<System:String x:Key="TaskList">Task Lists</System:String>
 	<System:String x:Key="NoActiveTask_Tip">No active tasks</System:String>
 	
 	<!--Dashboard Page-->
@@ -29,4 +35,28 @@
 	<System:String x:Key="EnableIndependencyGame">Instance Isolation</System:String>
 	<System:String x:Key="EnableIndependencySetting">启用版本独立设置</System:String>
 	<System:String x:Key="NoWorld_Tip">没有任何 Minecraft 单人存档或多人服务器</System:String>
+	
+	<!--Settings Navigation Page-->
+	<System:String x:Key="Game">游戏</System:String>
+	<System:String x:Key="Java">Java 运行时</System:String>
+	<System:String x:Key="About">关于</System:String>
+	<System:String x:Key="Account">账户</System:String>
+	<System:String x:Key="Network">网络</System:String>
+	<System:String x:Key="Launcher">启动器</System:String>
+	<System:String x:Key="Appearance">个性化</System:String>
+	<System:String x:Key="GameSettings">游戏设置</System:String>
+	<System:String x:Key="NetworkSettings">网络设置</System:String>
+	<System:String x:Key="AccountSettings">账户设置</System:String>
+	<System:String x:Key="JavaSettings">Java 运行时设置</System:String>
+	<System:String x:Key="AppearanceSettings">个性化设置</System:String>
+
+	<System:String x:Key="About_Description">启动器的相关信息</System:String>
+	<System:String x:Key="GameSettings_Description">全局设置你的游戏启动信息</System:String>
+	<System:String x:Key="JavaSettings_Description">设置你的 Java 运行时信息</System:String>
+	<System:String x:Key="AccountSettings_Description">管理你的 Minecraft 账户</System:String>
+	<System:String x:Key="NetworkSettings_Description">调整 WonderLab 的最大连接数并设置下载源</System:String>
+	<System:String x:Key="AppearanceSettings_Description">设置 WonderLab 的背景特效以及调整明暗主题</System:String>
+
+	<!--Download Navigation Page-->
+	<System:String x:Key="Search">搜索</System:String>
 </ResourceDictionary>
