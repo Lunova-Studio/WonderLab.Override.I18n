@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0"?>
 <ResourceDictionary xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:System="clr-namespace:System;assembly=mscorlib">
 	<!--Shared-->
-	<System:String x:Key="Close">关闭</System:String>
+	<System:String x:Key="Close"></System:String>
 	<System:String x:Key="Delete">删除</System:String>
-	<System:String x:Key="Home">首页</System:String>
+	<System:String x:Key="Home"></System:String>
 	<System:String x:Key="Download">下载</System:String>
 	<System:String x:Key="Multiplayer">联机</System:String>
 	<System:String x:Key="Settings">设置</System:String>
@@ -54,11 +54,11 @@
 	<System:String x:Key="AppearanceSettings">个性化设置</System:String>
 
 	<System:String x:Key="About_Description">启动器的相关信息</System:String>
-	<System:String x:Key="GameSettings_Description">全局设置您的启动信息</System:String>
-	<System:String x:Key="JavaSettings_Description">设置您的 Java 运行时信息</System:String>
-	<System:String x:Key="AccountSettings_Description">管理您的 Minecraft 账户</System:String>
-	<System:String x:Key="NetworkSettings_Description">调整本体最大连接数并设置下载源</System:String>
-	<System:String x:Key="AppearanceSettings_Description">设置本体背景特性以及明暗主题</System:String>
+	<System:String x:Key="GameSettings_Description">全局设置你的游戏启动信息</System:String>
+	<System:String x:Key="JavaSettings_Description">设置你的 Java 运行时信息</System:String>
+	<System:String x:Key="AccountSettings_Description">管理你的 Minecraft 账户</System:String>
+	<System:String x:Key="NetworkSettings_Description">调整 WonderLab 的最大连接数并设置下载源</System:String>
+	<System:String x:Key="AppearanceSettings_Description">设置 WonderLab 的背景特效以及调整明暗主题</System:String>
 
 	<!--Download Navigation Page-->
 	<System:String x:Key="Search">搜索</System:String>
