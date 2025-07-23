@@ -67,17 +67,17 @@ public sealed class I18nExtension : MarkupExtension {
 
     private sealed class FormatConverter : IMultiValueConverter {
         public object Convert(IList<object?> values, Type targetType, object? parameter, CultureInfo culture) {
-            if (values.Count < 2) return "";
+            if (values.Count < 2) 
+                return string.Empty;
 
-            var key = values[1]?.ToString() ?? "";
+            var key = values[1]?.ToString() ?? "dorodorodo?";
             var args = values.Skip(2).ToArray();
 
-            if (_langDict.TryGetValue(key, out var value)) {
-                var format = value?.ToString() ?? key;
+            if (_langDict.TryGetValue(key, out var value) && value != null) {
+                var format = value.ToString() ?? key;
                 return args.Length > 0 ? string.Format(format, args) : format;
-            }
-
-            return "dorodorodo?";
+            } else
+                return args.Length > 0 ? string.Format(key, args) : key;
         }
     }
 }
