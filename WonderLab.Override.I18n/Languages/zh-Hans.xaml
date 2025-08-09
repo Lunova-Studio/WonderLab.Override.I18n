@@ -55,7 +55,7 @@
 	<System:String x:Key="AppearanceSettings">个性化设置</System:String>
 
 	<System:String x:Key="About_Description">启动器的相关信息</System:String>
-	<System:String x:Key="GameSettings_Description">全局设置您的启动信息</System:String>
+	<System:String x:Key="GameSettings_Description">设置您的全局启动信息</System:String>
 	<System:String x:Key="JavaSettings_Description">设置您的 Java 运行时信息</System:String>
 	<System:String x:Key="AccountSettings_Description">管理您的 Minecraft 账户</System:String>
 	<System:String x:Key="NetworkSettings_Description">调整本体最大连接数并设置下载源</System:String>
