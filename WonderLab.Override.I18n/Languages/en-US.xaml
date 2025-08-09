@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0"?>
 <ResourceDictionary xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:System="clr-namespace:System;assembly=mscorlib">
 	<!--Shared-->
-	<System:String x:Key="Close">close</System:String>
-	<System:String x:Key="Delete">删除</System:String>
+	<System:String x:Key="Close">Close</System:String>
+	<System:String x:Key="Delete">Delete</System:String>
 	<System:String x:Key="Home">Home</System:String>
 	<System:String x:Key="Download">Download</System:String>
 	<System:String x:Key="Multiplayer">Multiplayer</System:String>
@@ -25,8 +25,8 @@
 	<System:String x:Key="AllGames">All Games</System:String>
 	<System:String x:Key="GameManager">Game Settings</System:String>
 	<System:String x:Key="NoInstalledGame_Tip">No Minecraft Instances Installed</System:String>
-	<System:String x:Key="CopyPath">复制游戏文件夹路径</System:String>
-	<System:String x:Key="OpenFolder">打开游戏文件夹</System:String>
+	<System:String x:Key="CopyPath">Copy game folder path</System:String>
+	<System:String x:Key="OpenFolder">Open game folder</System:String>
 	
 	<!--Tasks Page-->
 	<System:String x:Key="TaskList">Task Lists</System:String>
@@ -54,11 +54,11 @@
 	<System:String x:Key="AppearanceSettings">Appearance Settings</System:String>
 
 	<System:String x:Key="About_Description">About Launcher</System:String>
-	<System:String x:Key="GameSettings_Description">Global settings for your game launch information</System:String>
-	<System:String x:Key="JavaSettings_Description">Set your Java runtime information</System:String>
-	<System:String x:Key="AccountSettings_Description">Manage your Minecraft account</System:String>
-	<System:String x:Key="NetworkSettings_Description">Set the maximum number of connections for WonderLab</System:String>
-	<System:String x:Key="AppearanceSettings_Description">Set the background effects of WonderLab and set the themes</System:String>
+	<System:String x:Key="GameSettings_Description">Globally game settings</System:String>
+	<System:String x:Key="JavaSettings_Description">Set your JRE information</System:String>
+	<System:String x:Key="AccountSettings_Description">Manage your Minecraft accounts</System:String>
+	<System:String x:Key="NetworkSettings_Description">Adjust the maximum number of connections for download and set the download source</System:String>
+	<System:String x:Key="AppearanceSettings_Description">Set background properties and light/dark themes</System:String>
 
 	<!--Download Navigation Page-->
 	<System:String x:Key="Search">Search</System:String>
