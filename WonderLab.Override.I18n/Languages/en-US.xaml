@@ -10,6 +10,7 @@
 	<System:String x:Key="Launch">Launch</System:String>
 	<System:String x:Key="Install">Install</System:String>
 	<System:String x:Key="Path">Path</System:String>
+	<System:String x:Key="Skip">跳过</System:String>
 
 	<!-- Main Window -->
 	<System:String x:Key="TaskCenter">Task Center</System:String>
@@ -54,7 +55,7 @@
 	<System:String x:Key="AppearanceSettings">Appearance Settings</System:String>
 
 	<System:String x:Key="About_Description">About Launcher</System:String>
-	<System:String x:Key="GameSettings_Description">Globally game settings</System:String>
+	<System:String x:Key="GameSettings_Description">设置您的全局启动信息</System:String>
 	<System:String x:Key="JavaSettings_Description">Set your JRE information</System:String>
 	<System:String x:Key="AccountSettings_Description">Manage your Minecraft accounts</System:String>
 	<System:String x:Key="NetworkSettings_Description">Adjust the maximum number of connections for download and set the download source</System:String>
@@ -62,4 +63,17 @@
 
 	<!--Download Navigation Page-->
 	<System:String x:Key="Search">Search</System:String>
+	
+	<!--OOBE-->
+	<System:String x:Key="SettingsWizards">设置向导</System:String>
+	<System:String x:Key="OOBE_Back">上一步</System:String>
+	<System:String x:Key="OOBE_Next">下一步</System:String>
+	<System:String x:Key="OOBE_PageIndex_Format">第 {0} 页，共 {1} 页</System:String>
+	<System:String x:Key="OOBE_Completed">完成</System:String>
+	<System:String x:Key="OOBE_AddAccount">添加游戏账户</System:String>
+	<System:String x:Key="OOBE_ChooseJava">添加 Java 运行时</System:String>
+	<System:String x:Key="OOBE_QuickImport">快速导入设置</System:String>
+	<System:String x:Key="OOBE_ChooseTheme">个性化</System:String>
+	<System:String x:Key="OOBE_ChooseLanguage">选择你的语言</System:String>
+	<System:String x:Key="OOBE_ChooseMinecraft">添加游戏目录</System:String>
 </ResourceDictionary>
