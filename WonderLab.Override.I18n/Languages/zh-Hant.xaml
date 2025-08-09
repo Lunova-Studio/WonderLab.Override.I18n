@@ -54,11 +54,11 @@
 	<System:String x:Key="AppearanceSettings">個性化設置</System:String>
 
 	<System:String x:Key="About_Description">啟動器的相關信息</System:String>
-	<System:String x:Key="GameSettings_Description">全局設置您的遊戲啟動信息</System:String>
-	<System:String x:Key="JavaSettings_Description">設置您的 Java 運行時信息</System:String>
-	<System:String x:Key="AccountSettings_Description">管理您的 Minecraft 私人賬戶</System:String>
-	<System:String x:Key="NetworkSettings_Description">設置 WonderLab 最大的下載連接數以及設置下載源</System:String>
-	<System:String x:Key="AppearanceSettings_Description">設置 WonderLab 的背景特效以及調整明暗主題</System:String>
+	<System:String x:Key="GameSettings_Description">全局设置您的启动信息</System:String>
+	<System:String x:Key="JavaSettings_Description">设置您的 Java 运行时信息</System:String>
+	<System:String x:Key="AccountSettings_Description">管理您的 Minecraft 账户</System:String>
+	<System:String x:Key="NetworkSettings_Description">调整本体最大连接数并设置下载源</System:String>
+	<System:String x:Key="AppearanceSettings_Description">设置本体背景特性以及明暗主题</System:String>
 
 	<!--Download Navigation Page-->
 	<System:String x:Key="Search">搜索</System:String>
