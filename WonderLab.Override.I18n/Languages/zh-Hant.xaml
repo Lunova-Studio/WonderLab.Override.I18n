@@ -2,7 +2,7 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:System="clr-namespace:System;assembly=mscorlib">
 	<!--Shared-->
 	<System:String x:Key="Close">關閉</System:String>
-	<System:String x:Key="Delete">删除</System:String>
+	<System:String x:Key="Delete">刪除</System:String>
 	<System:String x:Key="Home">首頁</System:String>
 	<System:String x:Key="Download">下載</System:String>
 	<System:String x:Key="Multiplayer">聯機</System:String>
@@ -10,6 +10,7 @@
 	<System:String x:Key="Launch">啟動</System:String>
 	<System:String x:Key="Install">安裝</System:String>
 	<System:String x:Key="Path">路徑</System:String>
+	<System:String x:Key="Skip">跳過</System:String>
 
 	<!-- Main Window -->
 	<System:String x:Key="TaskCenter">任務中心</System:String>
@@ -25,8 +26,8 @@
 	<System:String x:Key="AllGames">所有遊戲</System:String>
 	<System:String x:Key="GameManager">遊戲管理</System:String>
 	<System:String x:Key="NoInstalledGame_Tip">未安裝任何 Minecraft 實例</System:String>
-	<System:String x:Key="CopyPath">复制游戏文件夹路径</System:String>
-	<System:String x:Key="OpenFolder">打开游戏文件夹</System:String>
+	<System:String x:Key="CopyPath">複製遊戲文件夾路徑</System:String>
+	<System:String x:Key="OpenFolder">打開遊戲文件夾</System:String>
 	
 	<!--Tasks Page-->
 	<System:String x:Key="TaskList">任務列表</System:String>
@@ -54,12 +55,25 @@
 	<System:String x:Key="AppearanceSettings">個性化設置</System:String>
 
 	<System:String x:Key="About_Description">啟動器的相關信息</System:String>
-	<System:String x:Key="GameSettings_Description">全局设置您的启动信息</System:String>
-	<System:String x:Key="JavaSettings_Description">设置您的 Java 运行时信息</System:String>
-	<System:String x:Key="AccountSettings_Description">管理您的 Minecraft 账户</System:String>
-	<System:String x:Key="NetworkSettings_Description">调整本体最大连接数并设置下载源</System:String>
-	<System:String x:Key="AppearanceSettings_Description">设置本体背景特性以及明暗主题</System:String>
+	<System:String x:Key="GameSettings_Description">設置您的全局啓動信息</System:String>
+	<System:String x:Key="JavaSettings_Description">設置您的 Java 運行時信息</System:String>
+	<System:String x:Key="AccountSettings_Description">管理您的 Minecraft 賬戶</System:String>
+	<System:String x:Key="NetworkSettings_Description">調整最大連接數並設置下載源</System:String>
+	<System:String x:Key="AppearanceSettings_Description">設置啓動器背景和主題</System:String>
 
 	<!--Download Navigation Page-->
 	<System:String x:Key="Search">搜索</System:String>
+	
+	<!--OOBE-->
+	<System:String x:Key="SettingsWizards">設置嚮導</System:String>
+	<System:String x:Key="OOBE_Back">上一步</System:String>
+	<System:String x:Key="OOBE_Next">下一步</System:String>
+	<System:String x:Key="OOBE_PageIndex_Format">第 {0} 頁，共 {1} 頁</System:String>
+	<System:String x:Key="OOBE_Completed">完成</System:String>
+	<System:String x:Key="OOBE_AddAccount">添加遊戲賬戶</System:String>
+	<System:String x:Key="OOBE_ChooseJava">添加 Java 運行時</System:String>
+	<System:String x:Key="OOBE_QuickImport">快速導入設置</System:String>
+	<System:String x:Key="OOBE_ChooseTheme">個性化</System:String>
+	<System:String x:Key="OOBE_ChooseLanguage">您使用的语言</System:String>
+	<System:String x:Key="OOBE_ChooseMinecraft">添加遊戲目錄</System:String>
 </ResourceDictionary>
