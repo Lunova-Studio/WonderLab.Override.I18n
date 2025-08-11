@@ -54,12 +54,12 @@
 	<System:String x:Key="JavaSettings">Java 运行时设置</System:String>
 	<System:String x:Key="AppearanceSettings">个性化设置</System:String>
 
-	<System:String x:Key="About_Description">启动器的相关信息</System:String>
+	<System:String x:Key="About_Description">启动器相关信息</System:String>
 	<System:String x:Key="GameSettings_Description">设置您的全局启动信息</System:String>
 	<System:String x:Key="JavaSettings_Description">设置您的 Java 运行时信息</System:String>
 	<System:String x:Key="AccountSettings_Description">管理您的 Minecraft 账户</System:String>
 	<System:String x:Key="NetworkSettings_Description">调整本体最大连接数并设置下载源</System:String>
-	<System:String x:Key="AppearanceSettings_Description">设置本体背景特性以及明暗主题</System:String>
+	<System:String x:Key="AppearanceSettings_Description">设置启动器背景和主题</System:String>
 
 	<!--Download Navigation Page-->
 	<System:String x:Key="Search">搜索</System:String>
@@ -74,6 +74,6 @@
 	<System:String x:Key="OOBE_ChooseJava">添加 Java 运行时</System:String>
 	<System:String x:Key="OOBE_QuickImport">快速导入设置</System:String>
 	<System:String x:Key="OOBE_ChooseTheme">个性化</System:String>
-	<System:String x:Key="OOBE_ChooseLanguage">选择你的语言</System:String>
+	<System:String x:Key="OOBE_ChooseLanguage">您使用的语言</System:String>
 	<System:String x:Key="OOBE_ChooseMinecraft">添加游戏目录</System:String>
 </ResourceDictionary>

@@ -14,7 +14,7 @@
 
 	<!-- Main Window -->
 	<System:String x:Key="TaskCenter">Task Center</System:String>
-	<System:String x:Key="TaskCount_Format">currently executing {0} tasks</System:String>
+	<System:String x:Key="TaskCount_Format">currently running {0} tasks</System:String>
 	
 	<!--Game Page-->
 	<System:String x:Key="Sort_Name">Name</System:String>
@@ -54,12 +54,12 @@
 	<System:String x:Key="JavaSettings">Java Settings</System:String>
 	<System:String x:Key="AppearanceSettings">Appearance Settings</System:String>
 
-	<System:String x:Key="About_Description">About Launcher</System:String>
+	<System:String x:Key="About_Description">Launcher details</System:String>
 	<System:String x:Key="GameSettings_Description">Set up your global start information</System:String>
 	<System:String x:Key="JavaSettings_Description">Set your JRE information</System:String>
 	<System:String x:Key="AccountSettings_Description">Manage your Minecraft accounts</System:String>
 	<System:String x:Key="NetworkSettings_Description">Adjust the maximum number of connections for download and set the download source</System:String>
-	<System:String x:Key="AppearanceSettings_Description">Set background properties and light/dark themes</System:String>
+	<System:String x:Key="AppearanceSettings_Description">Set Launcher background and theme</System:String>
 
 	<!--Download Navigation Page-->
 	<System:String x:Key="Search">Search</System:String>
