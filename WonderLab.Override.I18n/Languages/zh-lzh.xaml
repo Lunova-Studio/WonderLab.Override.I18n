@@ -37,7 +37,7 @@
 	<System:String x:Key="QuickLaunch">速戲</System:String>
 	<System:String x:Key="ControlCenter">速戲司理</System:String>
 	<System:String x:Key="EnableIndependencyGame">分明戲版</System:String>
-	<System:String x:Key="EnableIndependencySetting">啓分明戲版</System:String>
+	<System:String x:Key="EnableIndependencySetting">分明戲之啓參</System:String>
 	<System:String x:Key="NoWorld_Tip">尋《礦業》獨遊檔與衆戲服無果</System:String>
 	
 	<!--Settings Navigation Page-->
@@ -54,7 +54,7 @@
 	<System:String x:Key="JavaSettings">爪哇行者規設</System:String>
 	<System:String x:Key="AppearanceSettings">自訂規設</System:String>
 
-	<System:String x:Key="About_Description">啓者詳錄</System:String>
+	<System:String x:Key="About_Description">设置启动器背景和主题</System:String>
 	<System:String x:Key="GameSettings_Description">司戲之項</System:String>
 	<System:String x:Key="JavaSettings_Description">置君所用爪哇行者等</System:String>
 	<System:String x:Key="AccountSettings_Description">司《礦藝》之簿</System:String>
@@ -74,6 +74,6 @@
 	<System:String x:Key="OOBE_ChooseJava">增爪哇行境</System:String>
 	<System:String x:Key="OOBE_QuickImport">易規設</System:String>
 	<System:String x:Key="OOBE_ChooseTheme">君之所好</System:String>
-	<System:String x:Key="OOBE_ChooseLanguage">君所講之言</System:String>
+	<System:String x:Key="OOBE_ChooseLanguage">您使用的語言</System:String>
 	<System:String x:Key="OOBE_ChooseMinecraft">增有戲之夾</System:String>
 </ResourceDictionary>
