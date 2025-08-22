@@ -1,65 +1,79 @@
 ﻿<?xml version="1.0"?>
 <ResourceDictionary xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:System="clr-namespace:System;assembly=mscorlib">
 	<!--Shared-->
-	<System:String x:Key="Close">关闭</System:String>
-	<System:String x:Key="Delete">删除</System:String>
-	<System:String x:Key="Home">首页</System:String>
-	<System:String x:Key="Download">下载</System:String>
-	<System:String x:Key="Multiplayer">联机</System:String>
-	<System:String x:Key="Settings">设置</System:String>
-	<System:String x:Key="Launch">启动</System:String>
-	<System:String x:Key="Install">安装</System:String>
-	<System:String x:Key="Path">路径</System:String>
+	<System:String x:Key="Close">閉</System:String>
+	<System:String x:Key="Delete">刪</System:String>
+	<System:String x:Key="Home">主頁</System:String>
+	<System:String x:Key="Download">下載</System:String>
+	<System:String x:Key="Multiplayer">衆戲</System:String>
+	<System:String x:Key="Settings">規設</System:String>
+	<System:String x:Key="Launch">戲</System:String>
+	<System:String x:Key="Install">置</System:String>
+	<System:String x:Key="Path">處</System:String>
+	<System:String x:Key="Skip">略之</System:String>
 
 	<!-- Main Window -->
-	<System:String x:Key="TaskCenter">任务中心</System:String>
-	<System:String x:Key="TaskCount_Format">当前正在执行 {0} 个任务</System:String>
+	<System:String x:Key="TaskCenter">行事司理</System:String>
+	<System:String x:Key="TaskCount_Format">{0} 事正行</System:String>
 	
 	<!--Game Page-->
-	<System:String x:Key="Sort_Name">名称</System:String>
-	<System:String x:Key="Group_None">不分组</System:String>
-	<System:String x:Key="Group_Loader">模组加载器</System:String>
-	<System:String x:Key="Group_GameVersion">游戏版本</System:String>
-	<System:String x:Key="SortMode">排序方式</System:String>
-	<System:String x:Key="GroupMode">分组条件</System:String>
-	<System:String x:Key="AllGames">所有游戏</System:String>
-	<System:String x:Key="GameManager">游戏管理</System:String>
-	<System:String x:Key="NoInstalledGame_Tip">未安装任何 Minecraft 实例</System:String>
-	<System:String x:Key="CopyPath">复制游戏文件夹路径</System:String>
-	<System:String x:Key="OpenFolder">打开游戏文件夹</System:String>
+	<System:String x:Key="Sort_Name">名</System:String>
+	<System:String x:Key="Group_None">並列無分</System:String>
+	<System:String x:Key="Group_Loader">改者</System:String>
+	<System:String x:Key="Group_GameVersion">游藝之版</System:String>
+	<System:String x:Key="SortMode">彙類以</System:String>
+	<System:String x:Key="GroupMode">彙類之法</System:String>
+	<System:String x:Key="AllGames">覽諸戲</System:String>
+	<System:String x:Key="GameManager">司游藝</System:String>
+	<System:String x:Key="NoInstalledGame_Tip">尋《礦業》已置者無果</System:String>
+	<System:String x:Key="CopyPath">鈔戲之所處</System:String>
+	<System:String x:Key="OpenFolder">察有戲之夾</System:String>
 	
 	<!--Tasks Page-->
-	<System:String x:Key="TaskList">任务列表</System:String>
-	<System:String x:Key="NoActiveTask_Tip">无执行中的任务</System:String>
+	<System:String x:Key="TaskList">行事单</System:String>
+	<System:String x:Key="NoActiveTask_Tip">今日无事可为</System:String>
 	
 	<!--Dashboard Page-->
-	<System:String x:Key="QuickLaunch">快速启动</System:String>
-	<System:String x:Key="ControlCenter">控制中心</System:String>
-	<System:String x:Key="EnableIndependencyGame">版本隔离</System:String>
-	<System:String x:Key="EnableIndependencySetting">启用版本独立设置</System:String>
-	<System:String x:Key="NoWorld_Tip">没有任何 Minecraft 单人存档或多人服务器</System:String>
+	<System:String x:Key="QuickLaunch">速戲</System:String>
+	<System:String x:Key="ControlCenter">速戲司理</System:String>
+	<System:String x:Key="EnableIndependencyGame">分明戲版</System:String>
+	<System:String x:Key="EnableIndependencySetting">啓分明戲版</System:String>
+	<System:String x:Key="NoWorld_Tip">尋《礦業》獨遊檔與衆戲服無果</System:String>
 	
 	<!--Settings Navigation Page-->
-	<System:String x:Key="Game">游戏</System:String>
-	<System:String x:Key="Java">Java 运行时</System:String>
-	<System:String x:Key="About">关于</System:String>
-	<System:String x:Key="Account">账户</System:String>
-	<System:String x:Key="Network">网络</System:String>
-	<System:String x:Key="Launcher">启动器</System:String>
-	<System:String x:Key="Appearance">个性化</System:String>
-	<System:String x:Key="GameSettings">游戏设置</System:String>
-	<System:String x:Key="NetworkSettings">网络设置</System:String>
-	<System:String x:Key="AccountSettings">账户设置</System:String>
-	<System:String x:Key="JavaSettings">Java 运行时设置</System:String>
-	<System:String x:Key="AppearanceSettings">个性化设置</System:String>
+	<System:String x:Key="Game">戲</System:String>
+	<System:String x:Key="Java">爪哇行境</System:String>
+	<System:String x:Key="About">有涉</System:String>
+	<System:String x:Key="Account">薄</System:String>
+	<System:String x:Key="Network">網絡</System:String>
+	<System:String x:Key="Launcher">啓者</System:String>
+	<System:String x:Key="Appearance">自訂</System:String>
+	<System:String x:Key="GameSettings">戯之更定</System:String>
+	<System:String x:Key="NetworkSettings">網絡規設</System:String>
+	<System:String x:Key="AccountSettings">司薄</System:String>
+	<System:String x:Key="JavaSettings">爪哇行者規設</System:String>
+	<System:String x:Key="AppearanceSettings">自訂規設</System:String>
 
-	<System:String x:Key="About_Description">启动器的相关信息</System:String>
-	<System:String x:Key="GameSettings_Description">全局设置您的启动信息</System:String>
-	<System:String x:Key="JavaSettings_Description">设置您的 Java 运行时信息</System:String>
-	<System:String x:Key="AccountSettings_Description">管理您的 Minecraft 账户</System:String>
-	<System:String x:Key="NetworkSettings_Description">调整本体最大连接数并设置下载源</System:String>
-	<System:String x:Key="AppearanceSettings_Description">设置本体背景特性以及明暗主题</System:String>
+	<System:String x:Key="About_Description">啓者詳錄</System:String>
+	<System:String x:Key="GameSettings_Description">司戲之項</System:String>
+	<System:String x:Key="JavaSettings_Description">置君所用爪哇行者等</System:String>
+	<System:String x:Key="AccountSettings_Description">司《礦藝》之簿</System:String>
+	<System:String x:Key="NetworkSettings_Description">置啓者下傳處與接入之多等</System:String>
+	<System:String x:Key="AppearanceSettings_Description">擇啓者背景之相與配色等</System:String>
 
 	<!--Download Navigation Page-->
-	<System:String x:Key="Search">搜索</System:String>
+	<System:String x:Key="Search">尋</System:String>
+	
+	<!--OOBE-->
+	<System:String x:Key="SettingsWizards">引</System:String>
+	<System:String x:Key="OOBE_Back">反</System:String>
+	<System:String x:Key="OOBE_Next">續</System:String>
+	<System:String x:Key="OOBE_PageIndex_Format">第 {0} 頁，凡 {1} 頁</System:String>
+	<System:String x:Key="OOBE_Completed">畢</System:String>
+	<System:String x:Key="OOBE_AddAccount">增簿</System:String>
+	<System:String x:Key="OOBE_ChooseJava">增爪哇行境</System:String>
+	<System:String x:Key="OOBE_QuickImport">易規設</System:String>
+	<System:String x:Key="OOBE_ChooseTheme">君之所好</System:String>
+	<System:String x:Key="OOBE_ChooseLanguage">君所講之言</System:String>
+	<System:String x:Key="OOBE_ChooseMinecraft">增有戲之夾</System:String>
 </ResourceDictionary>
