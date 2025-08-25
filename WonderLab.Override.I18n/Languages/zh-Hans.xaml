@@ -12,6 +12,12 @@
 	<System:String x:Key="Path">路径</System:String>
 	<System:String x:Key="Skip">跳过</System:String>
 
+	<System:String x:Key="Noon">下午好</System:String>
+	<System:String x:Key="Evening">晚上好</System:String>
+	<System:String x:Key="Morning">早上好</System:String>
+	<System:String x:Key="Afternoon">下午好</System:String>
+	<System:String x:Key="LateNight">夜深了，注意休息哦</System:String>
+
 	<!-- Main Window -->
 	<System:String x:Key="TaskCenter">任务中心</System:String>
 	<System:String x:Key="TaskCount_Format">当前正在执行 {0} 个任务</System:String>
