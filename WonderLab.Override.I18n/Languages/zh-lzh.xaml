@@ -12,6 +12,12 @@
 	<System:String x:Key="Path">處</System:String>
 	<System:String x:Key="Skip">略之</System:String>
 
+	<System:String x:Key="Noon">下午好</System:String>
+	<System:String x:Key="Evening">晚上好</System:String>
+	<System:String x:Key="Morning">早上好</System:String>
+	<System:String x:Key="Afternoon">下午好</System:String>
+	<System:String x:Key="LateNight">夜深了，注意休息哦</System:String>
+
 	<!-- Main Window -->
 	<System:String x:Key="TaskCenter">行事司理</System:String>
 	<System:String x:Key="TaskCount_Format">{0} 事正行</System:String>
@@ -37,7 +43,7 @@
 	<System:String x:Key="QuickLaunch">速戲</System:String>
 	<System:String x:Key="ControlCenter">速戲司理</System:String>
 	<System:String x:Key="EnableIndependencyGame">分明戲版</System:String>
-	<System:String x:Key="EnableIndependencySetting">啓分明戲版</System:String>
+	<System:String x:Key="EnableIndependencySetting">分明戲之啓參</System:String>
 	<System:String x:Key="NoWorld_Tip">尋《礦業》獨遊檔與衆戲服無果</System:String>
 	
 	<!--Settings Navigation Page-->
@@ -54,7 +60,7 @@
 	<System:String x:Key="JavaSettings">爪哇行者規設</System:String>
 	<System:String x:Key="AppearanceSettings">自訂規設</System:String>
 
-	<System:String x:Key="About_Description">啓者詳錄</System:String>
+	<System:String x:Key="About_Description">擇啓者背景之相與配色等</System:String>
 	<System:String x:Key="GameSettings_Description">司戲之項</System:String>
 	<System:String x:Key="JavaSettings_Description">置君所用爪哇行者等</System:String>
 	<System:String x:Key="AccountSettings_Description">司《礦藝》之簿</System:String>
