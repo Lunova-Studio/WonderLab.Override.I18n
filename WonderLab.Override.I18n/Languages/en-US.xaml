@@ -12,6 +12,12 @@
 	<System:String x:Key="Path">Path</System:String>
 	<System:String x:Key="Skip">Skip</System:String>
 
+	<System:String x:Key="Noon">下午好</System:String>
+	<System:String x:Key="Evening">晚上好</System:String>
+	<System:String x:Key="Morning">早上好</System:String>
+	<System:String x:Key="Afternoon">下午好</System:String>
+	<System:String x:Key="LateNight">夜深了，注意休息哦</System:String>
+
 	<!-- Main Window -->
 	<System:String x:Key="TaskCenter">Task Center</System:String>
 	<System:String x:Key="TaskCount_Format">currently running {0} tasks</System:String>
@@ -37,7 +43,7 @@
 	<System:String x:Key="QuickLaunch">Quick Launch</System:String>
 	<System:String x:Key="ControlCenter">Control Center</System:String>
 	<System:String x:Key="EnableIndependencyGame">Instance Isolation</System:String>
-	<System:String x:Key="EnableIndependencySetting">Enable version-independent settings</System:String>
+	<System:String x:Key="EnableIndependencySetting">Launching config Isolation</System:String>
 	<System:String x:Key="NoWorld_Tip">There are no Minecraft single player saves or multiplayer servers</System:String>
 	
 	<!--Settings Navigation Page-->
@@ -54,7 +60,7 @@
 	<System:String x:Key="JavaSettings">Java Settings</System:String>
 	<System:String x:Key="AppearanceSettings">Appearance Settings</System:String>
 
-	<System:String x:Key="About_Description">Launcher details</System:String>
+	<System:String x:Key="About_Description">Set Launcher background and theme</System:String>
 	<System:String x:Key="GameSettings_Description">Set up your global start information</System:String>
 	<System:String x:Key="JavaSettings_Description">Set your JRE information</System:String>
 	<System:String x:Key="AccountSettings_Description">Manage your Minecraft accounts</System:String>
