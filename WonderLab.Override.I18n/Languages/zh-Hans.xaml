@@ -20,6 +20,7 @@
 
 	<!-- Main Window -->
 	<System:String x:Key="TaskCenter">任务中心</System:String>
+	<System:String x:Key="Launching_Format">正在启动 {0}</System:String>
 	<System:String x:Key="TaskCount_Format">当前正在执行 {0} 个任务</System:String>
 	
 	<!--Game Page-->
