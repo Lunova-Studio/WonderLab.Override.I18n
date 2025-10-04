@@ -12,8 +12,15 @@
 	<System:String x:Key="Path">路徑</System:String>
 	<System:String x:Key="Skip">跳過</System:String>
 
+	<System:String x:Key="Noon">下午好</System:String>
+	<System:String x:Key="Evening">晚上好</System:String>
+	<System:String x:Key="Morning">早上好</System:String>
+	<System:String x:Key="Afternoon">下午好</System:String>
+	<System:String x:Key="LateNight">夜深了，注意休息哦</System:String>
+
 	<!-- Main Window -->
 	<System:String x:Key="TaskCenter">任務中心</System:String>
+	<System:String x:Key="Launching_Format">正在启动 {0}</System:String>
 	<System:String x:Key="TaskCount_Format">正在執行 {0} 個任務</System:String>
 	
 	<!--Game Page-->
@@ -54,7 +61,7 @@
 	<System:String x:Key="JavaSettings">Java 運行時設置</System:String>
 	<System:String x:Key="AppearanceSettings">個性化設置</System:String>
 
-	<System:String x:Key="About_Description">啓動器相關信息</System:String>
+	<System:String x:Key="About_Description">設置啓動器背景與主題</System:String>
 	<System:String x:Key="GameSettings_Description">設置您的全局啓動信息</System:String>
 	<System:String x:Key="JavaSettings_Description">設置您的 Java 運行時信息</System:String>
 	<System:String x:Key="AccountSettings_Description">管理您的 Minecraft 賬戶</System:String>
