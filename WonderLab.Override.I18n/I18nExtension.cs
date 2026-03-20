@@ -4,7 +4,6 @@ using Avalonia.Data.Converters;
 using Avalonia.Markup.Xaml;
 using Avalonia.Metadata;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Globalization;
 
 namespace WonderLab.Override.I18n;
@@ -12,7 +11,6 @@ namespace WonderLab.Override.I18n;
 public sealed class I18nExtension : MarkupExtension {
     private const string ResourcePath = "avares://WonderLab.Override.I18n/Languages/";
 
-    private static ResourceDictionary _langDict = [];
     private static string _languageCode = string.Empty;
 
     public static string LanguageCode {
@@ -20,7 +18,7 @@ public sealed class I18nExtension : MarkupExtension {
             if (_languageCode != value) {
                 _languageCode = value;
                 var uri = new Uri($"{ResourcePath}{value}.xaml");
-                _langDict = AvaloniaXamlLoader.Load(uri) as ResourceDictionary ?? [];
+                LangResources = AvaloniaXamlLoader.Load(uri) as ResourceDictionary ?? [];
                 I18nNotifier.Instance.Trigger();
             }
         }
@@ -28,9 +26,10 @@ public sealed class I18nExtension : MarkupExtension {
 
     public string? Key { get; set; }
     public IBinding? KeyBinding { get; set; }
+    public static ResourceDictionary LangResources { get; private set; } = [];
 
     [Content]
-    public Collection<IBinding> Args { get; set; } = [];
+    public Collection<Binding> Args { get; set; } = [];
 
     public I18nExtension() { }
 
@@ -67,13 +66,13 @@ public sealed class I18nExtension : MarkupExtension {
 
     private sealed class FormatConverter : IMultiValueConverter {
         public object Convert(IList<object?> values, Type targetType, object? parameter, CultureInfo culture) {
-            if (values.Count < 2) 
+            if (values.Count < 2)
                 return string.Empty;
 
             var key = values[1]?.ToString() ?? "dorodorodo?";
             var args = values.Skip(2).ToArray();
 
-            if (_langDict.TryGetValue(key, out var value) && value != null) {
+            if (LangResources.TryGetValue(key, out var value) && value != null) {
                 var format = value.ToString() ?? key;
                 return args.Length > 0 ? string.Format(format, args) : format;
             } else
