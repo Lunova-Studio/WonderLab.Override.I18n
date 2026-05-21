@@ -12,9 +12,16 @@
 	<System:String x:Key="Path">Path</System:String>
 	<System:String x:Key="Skip">Skip</System:String>
 
+	<System:String x:Key="Noon">Good noon</System:String>
+	<System:String x:Key="Evening">Good evening!</System:String>
+	<System:String x:Key="Morning">Good morning!</System:String>
+	<System:String x:Key="Afternoon">Good afternoon</System:String>
+	<System:String x:Key="LateNight">Here's the night and rest</System:String>
+
 	<!-- Main Window -->
 	<System:String x:Key="TaskCenter">Task Center</System:String>
-	<System:String x:Key="TaskCount_Format">currently running {0} tasks</System:String>
+	<System:String x:Key="Launching_Format">Launching {0}</System:String>
+	<System:String x:Key="TaskCount_Format">There are {0} tasks which are running currently</System:String>
 	
 	<!--Game Page-->
 	<System:String x:Key="Sort_Name">Name</System:String>
@@ -37,7 +44,7 @@
 	<System:String x:Key="QuickLaunch">Quick Launch</System:String>
 	<System:String x:Key="ControlCenter">Control Center</System:String>
 	<System:String x:Key="EnableIndependencyGame">Instance Isolation</System:String>
-	<System:String x:Key="EnableIndependencySetting">Enable version-independent settings</System:String>
+	<System:String x:Key="EnableIndependencySetting">Launching config Isolation</System:String>
 	<System:String x:Key="NoWorld_Tip">There are no Minecraft single player saves or multiplayer servers</System:String>
 	
 	<!--Settings Navigation Page-->
@@ -54,9 +61,9 @@
 	<System:String x:Key="JavaSettings">Java Settings</System:String>
 	<System:String x:Key="AppearanceSettings">Appearance Settings</System:String>
 
-	<System:String x:Key="About_Description">Launcher details</System:String>
+	<System:String x:Key="About_Description">Set Launcher background and theme</System:String>
 	<System:String x:Key="GameSettings_Description">Set up your global start information</System:String>
-	<System:String x:Key="JavaSettings_Description">Set your JRE information</System:String>
+	<System:String x:Key="JavaSettings_Description">Set your JRE description</System:String>
 	<System:String x:Key="AccountSettings_Description">Manage your Minecraft accounts</System:String>
 	<System:String x:Key="NetworkSettings_Description">Adjust the maximum number of connections for download and set the download source</System:String>
 	<System:String x:Key="AppearanceSettings_Description">Set Launcher background and theme</System:String>
@@ -74,6 +81,6 @@
 	<System:String x:Key="OOBE_ChooseJava">Add Java Runtime</System:String>
 	<System:String x:Key="OOBE_QuickImport">Quick import settings</System:String>
 	<System:String x:Key="OOBE_ChooseTheme">Appearance</System:String>
-	<System:String x:Key="OOBE_ChooseLanguage">Language you use</System:String>
+	<System:String x:Key="OOBE_ChooseLanguage">The language you prefer</System:String>
 	<System:String x:Key="OOBE_ChooseMinecraft">Add Game directory</System:String>
 </ResourceDictionary>
