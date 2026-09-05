@@ -12,8 +12,15 @@
 	<System:String x:Key="Path">路径</System:String>
 	<System:String x:Key="Skip">跳过</System:String>
 
+	<System:String x:Key="Noon">下午好</System:String>
+	<System:String x:Key="Evening">晚上好</System:String>
+	<System:String x:Key="Morning">早上好</System:String>
+	<System:String x:Key="Afternoon">下午好</System:String>
+	<System:String x:Key="LateNight">夜深了，注意休息哦</System:String>
+
 	<!-- Main Window -->
 	<System:String x:Key="TaskCenter">任务中心</System:String>
+	<System:String x:Key="Launching_Format">正在启动 {0}</System:String>
 	<System:String x:Key="TaskCount_Format">当前正在执行 {0} 个任务</System:String>
 	
 	<!--Game Page-->
@@ -54,7 +61,7 @@
 	<System:String x:Key="JavaSettings">Java 运行时设置</System:String>
 	<System:String x:Key="AppearanceSettings">个性化设置</System:String>
 
-	<System:String x:Key="About_Description">启动器相关信息</System:String>
+	<System:String x:Key="About_Description">设置启动器背景和主题</System:String>
 	<System:String x:Key="GameSettings_Description">设置您的全局启动信息</System:String>
 	<System:String x:Key="JavaSettings_Description">设置您的 Java 运行时信息</System:String>
 	<System:String x:Key="AccountSettings_Description">管理您的 Minecraft 账户</System:String>
@@ -74,6 +81,6 @@
 	<System:String x:Key="OOBE_ChooseJava">添加 Java 运行时</System:String>
 	<System:String x:Key="OOBE_QuickImport">快速导入设置</System:String>
 	<System:String x:Key="OOBE_ChooseTheme">个性化</System:String>
-	<System:String x:Key="OOBE_ChooseLanguage">您使用的语言</System:String>
+	<System:String x:Key="OOBE_ChooseLanguage">您使用的語言</System:String>
 	<System:String x:Key="OOBE_ChooseMinecraft">添加游戏目录</System:String>
 </ResourceDictionary>
