@@ -12,7 +12,7 @@
 	<System:String x:Key="Path">路径</System:String>
 	<System:String x:Key="Skip">跳过</System:String>
 
-	<System:String x:Key="Noon">下午好</System:String>
+	<System:String x:Key="Noon">中午好</System:String>
 	<System:String x:Key="Evening">晚上好</System:String>
 	<System:String x:Key="Morning">早上好</System:String>
 	<System:String x:Key="Afternoon">下午好</System:String>
@@ -81,6 +81,6 @@
 	<System:String x:Key="OOBE_ChooseJava">添加 Java 运行时</System:String>
 	<System:String x:Key="OOBE_QuickImport">快速导入设置</System:String>
 	<System:String x:Key="OOBE_ChooseTheme">个性化</System:String>
-	<System:String x:Key="OOBE_ChooseLanguage">您使用的語言</System:String>
+	<System:String x:Key="OOBE_ChooseLanguage">您使用的语言</System:String>
 	<System:String x:Key="OOBE_ChooseMinecraft">添加游戏目录</System:String>
 </ResourceDictionary>
