@@ -1,79 +1,86 @@
 ﻿<?xml version="1.0"?>
 <ResourceDictionary xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:System="clr-namespace:System;assembly=mscorlib">
 	<!--Shared-->
-	<System:String x:Key="Close">关闭</System:String>
-	<System:String x:Key="Delete">删除</System:String>
-	<System:String x:Key="Home">首页</System:String>
-	<System:String x:Key="Download">下载</System:String>
-	<System:String x:Key="Multiplayer">联机</System:String>
-	<System:String x:Key="Settings">设置</System:String>
-	<System:String x:Key="Launch">启动</System:String>
-	<System:String x:Key="Install">安装</System:String>
-	<System:String x:Key="Path">路径</System:String>
-	<System:String x:Key="Skip">跳过</System:String>
+	<System:String x:Key="Close">閉じる</System:String>
+	<System:String x:Key="Delete">削除</System:String>
+	<System:String x:Key="Home">ホームページ</System:String>
+	<System:String x:Key="Download">ダウンロード</System:String>
+	<System:String x:Key="Multiplayer">マルチプレイヤーゲーム</System:String>
+	<System:String x:Key="Settings">設定</System:String>
+	<System:String x:Key="Launch">起動</System:String>
+	<System:String x:Key="Install">設置</System:String>
+	<System:String x:Key="Path">パス</System:String>
+	<System:String x:Key="Skip">スキップ</System:String>
+
+	<System:String x:Key="Noon">こんにちは</System:String>
+	<System:String x:Key="Evening">こんばんは</System:String>
+	<System:String x:Key="Morning">おはよう</System:String>
+	<System:String x:Key="Afternoon">こんにちは</System:String>
+	<System:String x:Key="LateNight">夜が深いので、ご自愛ください</System:String>
 
 	<!-- Main Window -->
-	<System:String x:Key="TaskCenter">任务中心</System:String>
-	<System:String x:Key="TaskCount_Format">当前正在执行 {0} 个任务</System:String>
+	<System:String x:Key="TaskCenter">タスクセンター</System:String>
+	<System:String x:Key="Launching_Format">起動中 {0}</System:String>
+	<System:String x:Key="TaskCount_Format">{0} 件タスク実行中</System:String>
 	
 	<!--Game Page-->
-	<System:String x:Key="Sort_Name">名称</System:String>
-	<System:String x:Key="Group_None">不分组</System:String>
-	<System:String x:Key="Group_Loader">模组加载器</System:String>
-	<System:String x:Key="Group_GameVersion">游戏版本</System:String>
-	<System:String x:Key="SortMode">排序方式</System:String>
-	<System:String x:Key="GroupMode">分组条件</System:String>
-	<System:String x:Key="AllGames">所有游戏</System:String>
-	<System:String x:Key="GameManager">游戏管理</System:String>
-	<System:String x:Key="NoInstalledGame_Tip">未安装任何 Minecraft 实例</System:String>
-	<System:String x:Key="CopyPath">复制游戏文件夹路径</System:String>
-	<System:String x:Key="OpenFolder">打开游戏文件夹</System:String>
+	<System:String x:Key="Sort_Name">名前</System:String>
+	<System:String x:Key="Group_None">グループ化なし</System:String>
+	<System:String x:Key="Group_Loader">Modローダー</System:String>
+	<System:String x:Key="Group_GameVersion">遊戲版本</System:String>
+	<System:String x:Key="SortMode">並び替え</System:String>
+	<System:String x:Key="GroupMode">グループ条件</System:String>
+	<System:String x:Key="AllGames">全ゲーム</System:String>
+	<System:String x:Key="GameManager">ゲーム管理</System:String>
+	<System:String x:Key="NoInstalledGame_Tip">Minecraft インスタンス 未インストール</System:String>
+	<System:String x:Key="CopyPath">ゲームファイルパスコピー</System:String>
+	<System:String x:Key="OpenFolder">ゲームフォルダを開く</System:String>
 	
 	<!--Tasks Page-->
-	<System:String x:Key="TaskList">任务列表</System:String>
-	<System:String x:Key="NoActiveTask_Tip">无执行中的任务</System:String>
+	<System:String x:Key="TaskList">任務リスト</System:String>
+	<System:String x:Key="NoActiveTask_Tip">実行中タスク なし</System:String>
 	
 	<!--Dashboard Page-->
-	<System:String x:Key="QuickLaunch">快速启动</System:String>
-	<System:String x:Key="ControlCenter">控制中心</System:String>
-	<System:String x:Key="EnableIndependencyGame">版本隔离</System:String>
-	<System:String x:Key="EnableIndependencySetting">启用版本独立设置</System:String>
-	<System:String x:Key="NoWorld_Tip">没有任何 Minecraft 单人存档或多人服务器</System:String>
+	<System:String x:Key="QuickLaunch">クイック起動</System:String>
+	<System:String x:Key="ControlCenter">制御センター</System:String>
+	<System:String x:Key="EnableIndependencyGame">バージョン隔離</System:String>
+	<System:String x:Key="EnableIndependencySetting">バージョン隔離を有効に</System:String>
+	<System:String x:Key="NoWorld_Tip">Minecraft シングル / マルチ データなし</System:String>
 	
 	<!--Settings Navigation Page-->
-	<System:String x:Key="Game">游戏</System:String>
-	<System:String x:Key="Java">Java 运行时</System:String>
-	<System:String x:Key="About">关于</System:String>
-	<System:String x:Key="Account">账户</System:String>
-	<System:String x:Key="Network">网络</System:String>
-	<System:String x:Key="Launcher">启动器</System:String>
-	<System:String x:Key="Appearance">个性化</System:String>
-	<System:String x:Key="GameSettings">游戏设置</System:String>
-	<System:String x:Key="NetworkSettings">网络设置</System:String>
-	<System:String x:Key="AccountSettings">账户设置</System:String>
-	<System:String x:Key="JavaSettings">Java 运行时设置</System:String>
-	<System:String x:Key="AppearanceSettings">个性化设置</System:String>
+	<System:String x:Key="Game">ゲーム</System:String>
+	<System:String x:Key="Java">Java Runtime</System:String>
+	<System:String x:Key="About">について</System:String>
+	<System:String x:Key="Account">アカウント</System:String>
+	<System:String x:Key="Network">ネットワーク</System:String>
+	<System:String x:Key="Launcher">ランチャー</System:String>
+	<System:String x:Key="Appearance">パーソナライズ</System:String>
+	<System:String x:Key="GameSettings">ゲーム設定</System:String>
+	<System:String x:Key="NetworkSettings">ネットワーク設定</System:String>
+	<System:String x:Key="AccountSettings">アカウント設定</System:String>
+	<System:String x:Key="JavaSettings">Java 実行時の設定</System:String>
+	<System:String x:Key="AppearanceSettings">個人設定</System:String>
 
-	<System:String x:Key="About_Description">启动器相关信息</System:String>
-	<System:String x:Key="GameSettings_Description">设置您的全局启动信息</System:String>
-	<System:String x:Key="JavaSettings_Description">设置您的 Java 运行时信息</System:String>
-	<System:String x:Key="AccountSettings_Description">管理您的 Minecraft 账户</System:String>
-	<System:String x:Key="NetworkSettings_Description">调整本体最大连接数并设置下载源</System:String>
-	<System:String x:Key="AppearanceSettings_Description">设置启动器背景和主题</System:String>
+	<System:String x:Key="About_Description">ランチャー背景・テーマ設定</System:String>
+	<System:String x:Key="GameSettings_Description">グローバル起動情報設定</System:String>
+	<System:String x:Key="JavaSettings_Description">JavaRuntime 情報設定</System:String>
+	<System:String x:Key="AccountSettings_Description">Minecraft アカウント管理</System:String>
+	<System:String x:Key="NetworkSettings_Description">本体最大接続数調整・ダウンロードソース設定</System:String>
+	<System:String x:Key="AppearanceSettings_Description">ランチャー背景・テーマ設定</System:String>
 
 	<!--Download Navigation Page-->
-	<System:String x:Key="Search">搜索</System:String>
+	<System:String x:Key="Search">検索</System:String>
 	
 	<!--OOBE-->
-	<System:String x:Key="SettingsWizards">设置向导</System:String>
-	<System:String x:Key="OOBE_Back">上一步</System:String>
-	<System:String x:Key="OOBE_Next">下一步</System:String>
-	<System:String x:Key="OOBE_PageIndex_Format">第 {0} 页，共 {1} 页</System:String>
-	<System:String x:Key="OOBE_Completed">完成</System:String>
-	<System:String x:Key="OOBE_AddAccount">添加游戏账户</System:String>
-	<System:String x:Key="OOBE_ChooseJava">添加 Java 运行时</System:String>
-	<System:String x:Key="OOBE_QuickImport">快速导入设置</System:String>
-	<System:String x:Key="OOBE_ChooseTheme">个性化</System:String>
-	<System:String x:Key="OOBE_ChooseLanguage">您使用的语言</System:String>
-	<System:String x:Key="OOBE_ChooseMinecraft">添加游戏目录</System:String>
+	<System:String x:Key="SettingsWizards">設定ウィザード</System:String>
+	<System:String x:Key="OOBE_Back">前のステップ</System:String>
+	<System:String x:Key="OOBE_Next">次のステップ</System:String>
+	<System:String x:Key="OOBE_PageIndex_Format">{0} ページ目 / 全 {1} ページ</System:String>
+	<System:String x:Key="OOBE_Completed">完了</System:String>
+	<System:String x:Key="OOBE_AddAccount">ゲームアカウントを追加</System:String>
+	<System:String x:Key="OOBE_ChooseJava">Java Runtimeを追加</System:String>
+	<System:String x:Key="OOBE_QuickImport">設定クイックインポート</System:String>
+	<System:String x:Key="OOBE_ChooseTheme">テーマ選択</System:String>
+	<System:String x:Key="OOBE_ChooseLanguage">お好みの言語</System:String>
+	<System:String x:Key="OOBE_ChooseMinecraft">ゲームディレクトリを追加</System:String>
 </ResourceDictionary>
